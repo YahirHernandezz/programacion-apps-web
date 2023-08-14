@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&family=Monoton&family=Montserrat&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charmonman&family=Monoton&family=Montserrat&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charmonman&family=Cinzel+Decorative:wght@900&family=Monoton&family=Montserrat&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*QUITAR LAS LINEAS Y VIÑETAS DE LOS ENLACES Y LISTAS*/
+    text-decoration: none; 
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+}
+
+.container {
+    max-width: 1200px;
+    /*NO SE SALE DE 1200 PX EL CONTENIDO Y SE CENTRA*/
+    margin: 0 auto;
+}
+
+/******SECCIÓN ENCABEZADO*******/
+.header {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(guillaume-grimaud-PNLwjJuKthg-unsplash.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/******SECCION MENU*********/
+.menu {
+    position: absolute;
+    /*CENTRAR EL MENU*/
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    /*SEPARACION ENTRE CADA DATO*/
+    justify-content: space-between;
+    /*SE POSICIONA DELANTE DE CUALQUIER ELEMENTO*/
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 24px;
+    color: #cf2d3a;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family:  'Cinzel Decorative', cursive;
+}
+
+/*MENU SUPERIOR*/
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+} 
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+} 
+
+/*AL PASAR EL CURSOR CAMBIA EL COLOR*/
+.menu .navbar ul li a:hover{
+    color: #cf2d3a;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.header h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #B4272E;
+    margin-bottom: 15px;
+}
+
+.header-txt span, h3{
+    font-size: 110px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #cf2d3a;
+    margin-bottom: 15px;
+}
+
+.header-txt span {
+    font-size: 25px;
+}
+
+.header-txt p{
+    color: #AFAFAF;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+
+/*BOTON INFORMACION MENU*/
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #D82E37;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 25px 0;
+    border: 0;
+}
+
+.btn-1:hover {
+    background-color: #B4272E;
+}
+
+.header-dir {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dir h3{
+    font-size: 18px;
+}
+
+.dir p{
+    font-size: 22px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/********SECCION WELCOME*********/
+.welcome {
+    display: flex;
+}
+
+/*IZQUIERDA*/
+.welcome-1 {
+    background: linear-gradient(rgba(5, 7, 12, 0.25), rgba(5, 7, 12, 0.15)), url(kevin-turcios-O1HX-leU9xo-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+/*DERECHA*/
+.welcome-2 {
+    width: 50%;
+    /*ARRIBA-DERECHA-ABAJO-IZQUIERDA*/
+    padding: 150px 140px 150px 100px;
+    background-color: #191919;
+}
+
+h2{
+    font-size: 90px;
+    /*LARGO DE LA LETRA*/
+    line-height: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #AFAFAF;
+    /*ARRIBA Y ABAJO - D&I*/
+    margin: 25px 0;
+}
+
+.b1{
+    font-size: 18px;
+    color: #cf2d3a;
+}
+
+/**********SECCION SERVICES***********/
+.services {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*LINEA DECORACION*/
+hr {
+    border: 1px solid #cf2d3a;
+    width: 80px;
+}
+
+.services-txt p{
+    padding: 50px 150px;
+}
+
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.services-1{
+    background-color: #070707;
+    padding: 35px 15px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.services-1 h3 {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.services-1 a {
+    color: #cf2d3a;
+    font-size: 16px;
+}
+
+/******SECCION PRECIOS******/
+.prices{
+    display: flex;
+}
+
+.prices-1{
+    width: 50%;
+    /*ARRIBA-DERECHA-ABAJO-IZQUIERDA*/
+    padding: 150px 100px 150px 100px;
+    background-color: #191919;
+}
+
+table {
+    margin: 50px 0;
+    width: 100%;
+    text-align: left;
+    /*SIN SEPARACIONES EN LOS BORDES*/
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #AFAFAF;
+    margin-bottom: 20px;
+}
+
+th {
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+td {
+    color: #cf2d3a;
+}
+
+.prices-2 {
+    background-image: url(maxim-hopman-52Kf36w124Y-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+/****SECCION PERSONAL*****/
+.personal {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personal-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.personal-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.personal-1{
+    text-align: center;
+}
+
+.personal-1 h3{
+    font-size: 22px;
+}
+
+.personal-1 p{
+    padding: 0 50px;
+}
+
+.personal-1 a{
+    color: #cf2d3a;
+    font-size: 20px;
+}
+
+.personal-1 a:hover{
+    color: #bc777a;
+}
+
+/********SECCION FOOTER*******/
+.footer-bg{
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(fallon-michael-EQucs66pts0-unsplash.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/***FORMULARIO***/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-1{
+    margin-bottom: 15px;
+}
+
+.campo {
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0E0E0E;
+    border: 1px solid #cf2d3a;
+    /*QUITAR ILUMINACION DEL INPUT*/
+    outline: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+textarea{
+    width: 520px !important;
+}
+
+/****FOOTER FINAL***/
+.footer-txt{
+    text-align: left;
+    padding: 10px;
+    background-color: #070707;
+}
+
+.footer-txt p{
+    font-size: 10px;
+}
+
+.autor p{
+    font-size: 15px;
+    color: #605b5b;
+}
